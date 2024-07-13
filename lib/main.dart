@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whispertalk/screens/Login%20or%20Rejister/login_or_rejister.dart';
 import 'package:whispertalk/screens/login/login_page.dart';
+import 'package:whispertalk/screens/rejister/rejister_page.dart';
 import 'package:whispertalk/themes/light_mode.dart';
 
 void main() {
@@ -15,8 +17,10 @@ class WhisperTalk extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Whisper Talk',
       theme: lightMode,
-      home: LoginPage(),
+      home: LoginOrRejister(),
     );
   }
 }
 
+//admin@gmail.com
+//admin123

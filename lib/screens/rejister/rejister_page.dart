@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:whispertalk/components/app_button.dart';
-import 'package:whispertalk/components/app_text_field.dart';
 
-class LoginPage extends StatelessWidget {
-  LoginPage({super.key, required this.onTap});
+import '../../components/app_button.dart';
+import '../../components/app_text_field.dart';
+
+class RejisterPage extends StatelessWidget {
+  RejisterPage({super.key, required this.onTap});
 
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
+  TextEditingController _confirmPasswordController = TextEditingController();
   void Function()? onTap;
 
-  void login(){}
+  void register(){}
 
   @override
   Widget build(BuildContext context) {
@@ -30,33 +32,42 @@ class LoginPage extends StatelessWidget {
 
               //welcome back
               Text(
-                  "Welcome back, you've been missed!",
+                  "Let's get you started!",
                   style: TextStyle(
-                    color: Theme.of(context).colorScheme.primary,
-                    fontSize: 18
+                      color: Theme.of(context).colorScheme.primary,
+                      fontSize: 18
                   )
               ),
               SizedBox(height: 30),
 
               //email
               AppTextField(
-                  hintText: 'Email',
-                  obscureText: false,
-                  controller: _emailController,
+                hintText: 'Email',
+                obscureText: false,
+                controller: _emailController,
               ),
               SizedBox(height: 20),
 
               //password
               AppTextField(
-                  hintText: 'Password',
-                  obscureText: true,
-                  controller: _passwordController,
+                hintText: 'Password',
+                obscureText: true,
+                controller: _passwordController,
+              ),
+
+              SizedBox(height: 20),
+
+              //confirm password
+              AppTextField(
+                hintText: 'Confirm Password',
+                obscureText: true,
+                controller: _confirmPasswordController,
               ),
 
               //login button
               AppButton(
-                  buttonName: 'Login',
-                  onTap: login
+                  buttonName: 'Register',
+                  onTap: register
               ),
               SizedBox(height: 20),
 
@@ -65,7 +76,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Not a member? ",
+                    "Already have an account? ",
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.primary,
                     ),
@@ -73,7 +84,7 @@ class LoginPage extends StatelessWidget {
                   GestureDetector(
                     onTap: onTap,
                     child: Text(
-                      "Register now",
+                      "Login now",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).colorScheme.primary,
