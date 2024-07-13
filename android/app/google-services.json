@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "586125547114",
+    "project_id": "whisper-talk-632d6",
+    "storage_bucket": "whisper-talk-632d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586125547114:android:4542fcfbc93e4ade96dc13",
+        "android_client_info": {
+          "package_name": "com.pendragon.whispertalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWk3W504mE_OB5dR_chPlqJ28xRdUdZyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
